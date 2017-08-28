@@ -22,3 +22,16 @@ security:
 
             # https://symfony.com/doc/current/security/form_login_setup.html
             #form_login: ~
+
+            form_login:
+                # ...
+                success_handler: app_bundle.security.login_success_handler
+
+            logout:
+                # ...
+                success_handler: app_bundle.security.logout_success_handler
+
+    access_control:
+        # We need to allow users to access the /sso/login route
+        # without being logged in
+        - { path: ^/sso/login, role: IS_AUTHENTICATED_ANONYMOUSLY }

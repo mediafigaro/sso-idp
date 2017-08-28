@@ -67,3 +67,17 @@ swiftmailer:
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
+
+krtv_single_sign_on_identity_provider:
+    host:             idp.example.com
+    host_scheme:      http
+
+    login_path:       /sso/login/
+    logout_path:      /sso/logout
+
+    services:
+        - consumer1
+        #- consumer2
+
+    otp_parameter:    _otp
+    secret_parameter: secret

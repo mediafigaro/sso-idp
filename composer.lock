@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3e519bae0eb959138c6f9a7311cfa1e4",
-    "content-hash": "693b58d223a19ed96945aea9b0bbd651",
+    "hash": "eddefdb397cf2353da893aa0a0e59a00",
+    "content-hash": "76741fb69a465a3d95e18f0ac095aed0",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -890,6 +890,187 @@
             "time": "2016-10-17 18:31:11"
         },
         {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.0 || ^5.0",
+                "psr/log": "^1.0"
+            },
+            "suggest": {
+                "psr/log": "Required for using the Log middleware"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2017-06-22 18:50:49"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20 10:07:11"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-03-20 17:10:46"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.2",
             "source": {
@@ -989,6 +1170,116 @@
                 "sql"
             ],
             "time": "2014-01-12 16:20:24"
+        },
+        {
+            "name": "korotovsky/sso-idp-bundle",
+            "version": "0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/korotovsky/SingleSignOnIdentityProviderBundle.git",
+                "reference": "7a68c983b34cc97198d9da777dc788430a90142c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/korotovsky/SingleSignOnIdentityProviderBundle/zipball/7a68c983b34cc97198d9da777dc788430a90142c",
+                "reference": "7a68c983b34cc97198d9da777dc788430a90142c",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": "~2.3",
+                "ext-openssl": "*",
+                "korotovsky/sso-library": "~0.3.0",
+                "php": ">=5.5",
+                "symfony/symfony": "~2.8|~3.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "~1.6",
+                "doctrine/doctrine-fixtures-bundle": "~2.3",
+                "phpunit/phpunit": ">=4.4"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Krtv\\Bundle\\SingleSignOnIdentityProviderBundle\\": "src/Krtv/Bundle/SingleSignOnIdentityProviderBundle",
+                    "Krtv\\Bundle\\SingleSignOnIdentityProviderBundle\\Tests\\": "tests/Krtv/Bundle/SingleSignOnIdentityProviderBundle/Tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Kruithof",
+                    "email": "peter@financial-media.nl"
+                },
+                {
+                    "name": "Dmitry Korotovsky",
+                    "email": "dmitry@korotovsky.io"
+                }
+            ],
+            "description": "Single-sign-on bundle for Symfony2. Identity Provider part.",
+            "keywords": [
+                "SSO",
+                "login",
+                "otp",
+                "single-sign-on"
+            ],
+            "time": "2017-06-07 15:17:50"
+        },
+        {
+            "name": "korotovsky/sso-library",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/korotovsky/SingleSignOnLibrary.git",
+                "reference": "146eb3bab409209d4f125085017953012c8eba6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/korotovsky/SingleSignOnLibrary/zipball/146eb3bab409209d4f125085017953012c8eba6c",
+                "reference": "146eb3bab409209d4f125085017953012c8eba6c",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": "~2.3",
+                "ext-openssl": "*",
+                "guzzlehttp/guzzle": "~6.0",
+                "php": ">=5.5",
+                "symfony/symfony": "~2.8|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Krtv\\SingleSignOn\\": "src/Krtv/SingleSignOn",
+                    "Krtv\\SingleSignOn\\Tests\\": "tests/Krtv/SingleSignOn/Tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Kruithof",
+                    "email": "peter@financial-media.nl"
+                },
+                {
+                    "name": "Dmitry Korotovsky",
+                    "email": "dmitry@korotovsky.io"
+                }
+            ],
+            "description": "Single-sign-on library for Symfony2",
+            "keywords": [
+                "SSO",
+                "login",
+                "otp",
+                "single-sign-on"
+            ],
+            "time": "2015-12-11 11:26:51"
         },
         {
             "name": "monolog/monolog",
@@ -1210,6 +1501,56 @@
                 "psr"
             ],
             "time": "2017-02-14 16:28:37"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "psr/link",

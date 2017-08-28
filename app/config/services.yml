@@ -33,3 +33,24 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+
+    app_bundle.sso.consumer1:
+        class: AppBundle\ServiceProviders\Consumer1
+        tags:
+            - { name: sso.service_provider, service: consumer1 }
+
+    app_bundle.security.login_success_handler:
+        class: AppBundle\Handler\LoginSuccessHandler
+        arguments:
+            - "@sso_identity_provider.service_manager"
+            - "@sso_identity_provider.uri_signer"
+            - "@session"
+            - "@router"
+
+    app_bundle.security.logout_success_handler:
+        class: AppBundle\Handler\LogoutSuccessHandler
+        arguments:
+            - "@sso_identity_provider.service_manager"
+            - "@sso_identity_provider.uri_signer"
+            - "@session"
+            - "@router"
