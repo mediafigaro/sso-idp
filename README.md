@@ -12,14 +12,3 @@ https://www.korotovsky.io/2015/08/16/a-quick-way-to-build-single-sign-on-authent
 # Code
 
 https://github.com/korotovsky/SingleSignOnIdentityProviderBundle
-
-# Tests
-
-    http://sso-sp.com
-    
-redirects to :
-    
-
-    
-= 400 Bad Request
-
