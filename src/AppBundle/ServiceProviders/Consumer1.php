@@ -29,7 +29,7 @@ class Consumer1 implements ServiceProviderInterface
      */
     public function getServiceIndexUrl($parameters = [])
     {
-        return 'http://sso_sp.com/';
+        return 'http://sso-sp.com/';
     }
 
     /**
@@ -41,7 +41,7 @@ class Consumer1 implements ServiceProviderInterface
      */
     public function getServiceLogoutUrl($parameters = [])
     {
-        return 'http://sso_sp.com/logout';
+        return 'http://sso-sp.com/logout';
     }
 }
 ?>

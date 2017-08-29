@@ -69,7 +69,7 @@ swiftmailer:
     spool: { type: memory }
 
 krtv_single_sign_on_identity_provider:
-    host:             sso_idp.com
+    host:             sso-idp.com
     host_scheme:      http
 
     login_path:       /sso/login/
