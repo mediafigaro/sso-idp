@@ -17,7 +17,7 @@ class Consumer1 implements ServiceProviderInterface
      */
     public function getName()
     {
-        return 'sso_sp_1';
+        return 'consumer1';
     }
 
     /**
@@ -43,5 +43,28 @@ class Consumer1 implements ServiceProviderInterface
     {
         return 'http://sso-sp.com/logout';
     }
+
+
+    public function getOTPValidationUrl($parameters = [])
+    {
+
+        $url_string = '';
+
+        if (sizeof($parameters)>0) {
+
+            $url_string = '?';
+
+            foreach($parameters as $key => $value) {
+                $url_string .= "$key=$value&";
+            }
+
+            $url_string = substr($url_string,0,-1);
+
+        }
+
+        return "http://sso-sp.com/otp/validate/$url_string";
+
+    }
+
 }
 ?>

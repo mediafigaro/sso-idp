@@ -46,6 +46,8 @@ services:
             - "@sso_identity_provider.uri_signer"
             - "@session"
             - "@router"
+        tags:
+            - { name: 'monolog.logger', channel: 'security' }
 
     app_bundle.security.logout_success_handler:
         class: AppBundle\Handler\LogoutSuccessHandler
@@ -54,3 +56,5 @@ services:
             - "@sso_identity_provider.uri_signer"
             - "@session"
             - "@router"
+        tags:
+            - { name: 'monolog.logger', channel: 'security' }
