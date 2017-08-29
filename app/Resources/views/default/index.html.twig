@@ -6,7 +6,24 @@
     <div id="wrapper">
         <div id="container">
             <div id="welcome">
+
                 <h1><span>Symfony {{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION') }}</span>SSO IDP</h1>
+
+                <p>
+                    <a href="{{ path('login') }}">login</a> | <a href="{{ path('logout') }}">logout</a>
+                    <br />
+                    <a href="//sso-sp.com">sso-sp.com</a>
+                </p>
+
+                <b>
+                    {% if app.user.username is defined %}
+                    <b>logged</b> : {{ app.user.username }}
+                    {% else %}
+                        <b>not logged</b>
+                    {% endif %}
+
+                </p>
+
             </div>
         </div>
     </div>
